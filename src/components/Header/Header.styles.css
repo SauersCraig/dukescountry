@@ -1,0 +1,47 @@
+.headerContainer {
+  display: grid;
+  grid-template-columns: 8% 92%;
+  margin: 0 0 10px;
+}
+
+.headerBtn img {
+  height: 50px;
+}
+.headerLogo {
+  height: 100px;
+  margin: 0 auto 0;
+}
+nav {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+/* Menu */
+.headerMenu {
+  background-color: #ffc629;
+  color: black;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  width: 50%;
+}
+.headerMenu a {
+  font-family: "ProtestStrike";
+  display: block;
+  padding: 10px 30px 10px;
+  font-size: 3em;
+  color: white;
+}
+.headerMenu a:hover {
+  color: black;
+}
+@media only screen and (max-width: 900px) {
+  .headerContainer {
+    display: grid;
+    grid-template-columns: 15% 85%;
+  }
+  .headerMenu {
+    width: 100%;
+    text-align: center;
+  }
+}

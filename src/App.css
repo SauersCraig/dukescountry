@@ -19,16 +19,35 @@
   src: local("ArcherProIta"),
     url(./assets/fonts/ArcherPro-SemiboldIta.otf) format("opentype");
 }
+@font-face {
+  font-family: "ProtestStrike";
+  src: local("ProtestStrike"),
+    url(./assets/fonts/ProtestStrike-Regular.ttf) format("truetype");
+}
+body {
+  font-family: "ArcherPro";
+  padding: 0;
+  margin: 0;
+}
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+button:hover {
+  filter: brightness(70%);
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "ProtestStrike";
+}
 img {
   max-width: 100%;
 }
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-h1 {
-  font-family: "DukesTS";
-  font-size: 3em;
+a {
+  font-family: "ArcherProIta";
+  text-decoration: none;
+  color: white;
 }
