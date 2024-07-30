@@ -24,10 +24,18 @@
   src: local("ProtestStrike"),
     url(./assets/fonts/ProtestStrike-Regular.ttf) format("truetype");
 }
+@font-face {
+  font-family: "DukesTNarrow";
+  src: url(./assets/fonts/TungstenNarrow-SemiBold.ttf) format("truetype");
+}
 body {
   font-family: "ArcherPro";
   padding: 0;
   margin: 0;
+  background-image: url(./assets/background.jpg);
+  background-color: #141413;
+  background-position: center;
+  background-size: cover;
 }
 button {
   border: none;

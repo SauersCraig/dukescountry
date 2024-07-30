@@ -1,6 +1,6 @@
 // Asset Imports
 import "./VideoHero.styles.css";
-import Guys from "../../assets/tatooGuys.png";
+import Guys from "../../assets/gifs/videoGif.gif";
 
 export function VideoHero() {
   return (
