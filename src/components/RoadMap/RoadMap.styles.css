@@ -1,6 +1,140 @@
-.mapSection {
-  background-image: url(../../assets/roads/DesktopRoad.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+.exploreLogo {
+  width: 40%;
+  margin: 40px auto 0px;
+}
+section {
+  padding: 0;
+  margin: 0;
+}
+.deskSignContainer {
+  display: block;
+  position: relative;
+  height: 900px;
+  padding: 0;
+  margin: 0;
+  margin-top: -20px;
+}
+.deskSignContainer img {
+  position: absolute;
+}
+.desktopRoad {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 900px;
+  width: 100vw;
+  z-index: -1;
+}
+.roadSign {
+  height: 300px;
+  cursor: pointer;
+}
+.recSign {
+  left: 10%;
+  top: 20%;
+}
+.merchSign {
+  right: 50%;
+  bottom: 10%;
+}
+.bowlSign {
+  right: 20%;
+  top: 30%;
+}
+.roadSign:hover {
+  animation: shake 0.9s;
+  animation-iteration-count: infinite;
+}
+
+/* Mobile Area */
+.mobileRoadSection {
+  display: none;
+  position: relative;
+  height: 900px;
+  padding: 0;
+  margin: 0;
+  margin-top: -50px;
+}
+.mobileRoadSection img {
+  position: absolute;
+}
+.mobileRoad {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 900px;
+  width: 100vw;
+  z-index: -1;
+}
+.recSignMob {
+  top: 5%;
+  left: 10px;
+}
+.merchSignMob {
+  bottom: 0;
+  left: 10px;
+}
+.bowlSignMob {
+  bottom: 35%;
+  right: 0;
+}
+.roadSignMob {
+  height: 250px;
+  cursor: pointer;
+}
+.roadSignMob:hover {
+  animation: shake 0.9s;
+  animation-iteration-count: infinite;
+}
+@media only screen and (max-width: 900px) {
+  .deskSignContainer {
+    display: none;
+  }
+  .exploreLogo {
+    width: 70%;
+    margin: 40px auto 0px;
+  }
+  .mobileRoad {
+    display: block;
+  }
+  .mobileRoadSection {
+    display: block;
+  }
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }

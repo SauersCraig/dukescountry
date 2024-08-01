@@ -7,8 +7,10 @@ import thumbnail from "./assets/thumbnail.png";
 import { Route, Routes } from "react-router-dom";
 // Components
 import { Header } from "./components/Header/Header";
+import { Footer } from "./components/Footer/Footer";
 // Pages
 import { HomePage } from "./pages/HomePage/HomePage";
+import { AdminPage } from "./pages/AdminPage/AdminPage";
 
 function App() {
   return (
@@ -16,7 +18,9 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/AdminPage" element={<AdminPage />} />
       </Routes>
+      <Footer />
     </>
   );
 }

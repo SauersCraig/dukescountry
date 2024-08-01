@@ -1,0 +1,12 @@
+.footerSection {
+  height: 50px;
+  background-color: #febc02;
+  text-align: end;
+  padding: 10px 10px 0;
+}
+.ppText {
+  color: black;
+}
+.ppText:hover {
+  color: white;
+}

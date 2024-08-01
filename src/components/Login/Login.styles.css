@@ -1,0 +1,51 @@
+.signUpText {
+  text-align: center;
+}
+.smallerSignUpText {
+  text-align: center;
+  font-size: 0.8em;
+  padding: 0 10px 0;
+}
+.resetPassText {
+  display: block;
+  margin: 0 auto 0;
+  border: none;
+  background-color: transparent;
+}
+
+.headerTY {
+  font-family: "ProtestStrike";
+  font-size: 4em;
+  text-align: center;
+
+  font-weight: 400;
+  line-height: 0.8;
+}
+.formContainer {
+  text-align: center;
+}
+.subBtn {
+  font-family: "ProtestStrike";
+  border: solid 2px #d8282f;
+  padding: 10px 30px 10px;
+  background-color: #d8282f;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+
+  margin: 20px;
+}
+.subBtn:hover {
+  background-color: white;
+  color: #d8282f;
+  filter: brightness(100%);
+}
+.inputSignUp {
+  display: block;
+  margin: 20px auto 20px;
+  font-size: 1.3em;
+  width: 60%;
+  padding: 10px 20px 10px;
+  border-radius: 10px;
+  border: black solid 2px;
+}
