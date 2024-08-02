@@ -12,11 +12,11 @@ export function PopUp() {
   });
 
   if (cookie) {
-    sessionStorage.setItem("cookie", JSON.stringify(cookie));
+    sessionStorage.setItem("PopUpToken", JSON.stringify(cookie));
   }
   useEffect(() => {
-    if (sessionStorage.getItem("cookie")) {
-      let data = JSON.parse(sessionStorage.getItem("cookie"));
+    if (sessionStorage.getItem("PopUpToken")) {
+      let data = JSON.parse(sessionStorage.getItem("PopUpToken"));
       setCookie(data);
     }
   }, []);
