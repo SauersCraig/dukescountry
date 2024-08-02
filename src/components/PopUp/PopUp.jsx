@@ -22,7 +22,6 @@ export function PopUp() {
   }, []);
 
   const closePopUp = () => {
-    setCookie(true);
     setOpen(false);
   };
   function handleChange(event) {
@@ -38,7 +37,8 @@ export function PopUp() {
       .select();
 
     setCookie(true);
-    console.log(data);
+    setOpen(false);
+   
   }
 
   return (

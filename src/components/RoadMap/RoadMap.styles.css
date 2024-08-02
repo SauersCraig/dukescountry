@@ -43,7 +43,7 @@ section {
   top: 30%;
 }
 .roadSign:hover {
-  animation: shake 0.9s;
+  animation: shake 1s;
   animation-iteration-count: infinite;
 }
 
@@ -85,7 +85,7 @@ section {
   cursor: pointer;
 }
 .roadSignMob:hover {
-  animation: shake 0.9s;
+  animation: shake 1s;
   animation-iteration-count: infinite;
 }
 @media only screen and (max-width: 900px) {
