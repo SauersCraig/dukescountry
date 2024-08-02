@@ -19,7 +19,7 @@
 
 
 User-Agent: *
-Disallow: 
+Disallow: /adminpage
 
 #              ________
 #   __,_,     |        |
