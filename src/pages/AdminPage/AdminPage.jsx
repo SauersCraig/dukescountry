@@ -2,6 +2,8 @@ import "./AdminPage.styles.css";
 import { useState, useEffect } from "react";
 import { supabase } from "../../client";
 import { Login } from "../../components/Login/Login";
+import { CSVLink } from "react-csv";
+import { SignUpSection } from "../../components/SignUpSection/SignUpSection";
 export function AdminPage() {
   const [token, setToken] = useState(false);
   const [users, setUsers] = useState([]);
@@ -33,30 +35,21 @@ export function AdminPage() {
     setUserInfo([]);
     location.reload();
   }
-  console.log(users);
+
+  const name = token ? token.user.user_metadata.first_name : "";
   return (
     <div className="adminBody">
       <h1 className="text-center">Admin Page For Offical Use Only</h1>
       <div>
         {token ? (
           <div>
-            <h1>You are logged in {token.user.user_metadata.first_name}</h1>
-            <div>
-              {users && (
-                <div>
-                  {users.map((i) => (
-                    <ul key={i.id}>
-                      <li>{i.email}</li>
-                      <li>{i.phone}</li>
-                      <li>{i.created_at}</li>
-                    </ul>
-                  ))}
-                </div>
-              )}
-            </div>
+            <SignUpSection name={name} users={users} />
             <button onClick={() => signOut()} className="subBtn">
               Sign Out
             </button>
+            <CSVLink data={users} className="subBtn">
+              Download Users
+            </CSVLink>
           </div>
         ) : (
           <Login setToken={setToken} />

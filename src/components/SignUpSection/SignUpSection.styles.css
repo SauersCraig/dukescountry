@@ -1,0 +1,22 @@
+.signUpContainer {
+  background-color: white;
+  color: black;
+}
+.signUpContainer h1 {
+  text-align: center;
+}
+.noDot {
+  list-style-type: none;
+}
+.userContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.eachSignUp {
+  margin: 5px;
+}
+@media only screen and (max-width: 900px) {
+  .userContainer {
+    display: block;
+  }
+}
