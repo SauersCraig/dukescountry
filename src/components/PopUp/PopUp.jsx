@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Logo from "../../assets/logos/logo.png";
 import Gif from "../../assets/gifs/splashPageGif.gif";
 import { supabase } from "../../client";
+import PhoneInput from "react-phone-input-2";
 export function PopUp() {
   const [open, setOpen] = useState(true);
   const [cookie, setCookie] = useState(false);
@@ -30,17 +31,19 @@ export function PopUp() {
   }
   async function handleSubmit(e) {
     e.preventDefault();
+    if (formData.email && formData.phone !== "") {
+      const { data, error } = await supabase
+        .from("SignUps")
+        .insert([{ email: formData.email, phone: formData.phone }])
+        .select();
 
-    const { data, error } = await supabase
-      .from("SignUps")
-      .insert([{ email: formData.email, phone: formData.phone }])
-      .select();
-
-    setCookie(true);
-    setOpen(false);
-   
+      setCookie(true);
+      setOpen(false);
+    } else {
+      alert("Please Fill Out Both Inputs");
+    }
   }
-
+  console.log(formData.phone);
   return (
     <>
       {open && !cookie ? (
@@ -73,20 +76,24 @@ export function PopUp() {
                 Country welcome kit.
               </h2>
               <form className="popUpForm" onSubmit={handleSubmit}>
+                <label>Email</label>
+                <br></br>
                 <input
-                  placeholder="EMAIL"
                   type="email"
                   onChange={handleChange}
                   name="email"
                   required
                 ></input>
-                <input
-                  placeholder="PHONE NUMBER"
-                  type="number"
-                  name="phone"
-                  onChange={handleChange}
+                <PhoneInput
+                  country={"us"}
+                  placeholder={"PHONE"}
+                  value={formData.phone}
+                  rules={{ required: true }}
+                  onChange={(value) =>
+                    setFormData({ ...formData, phone: value })
+                  }
                   required
-                ></input>
+                />
                 <button className="subBtnPopUp" type="submit">
                   TELL ME MORE
                 </button>
