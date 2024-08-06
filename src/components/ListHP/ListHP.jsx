@@ -12,14 +12,14 @@ export function ListHP() {
       </div>
       <div>
         <p>
-          Where rival can put aside their difference and put down some ribs at
+          Where rivals can put aside their differences and put down some ribs at
           the tailgate.
         </p>
       </div>
       <div>
         <p>
           Where you can be yourself, even if that means a back tattoo or using a
-          30oz jar as an urn.
+          jar as an urn.
         </p>
       </div>
       <div>

@@ -38,11 +38,8 @@ export function MobileHeader() {
             >
               MERCH
             </a>
-            <a
-              href="https://dukesmayo.com/pages/dukes-mayo-bowl"
-              target="_blank"
-            >
-              DUKE'S MAYO BOWL
+            <a href="https://dukesmayo.com/pages/classic" target="_blank">
+              DUKE'S MAYO CLASSIC
             </a>
           </div>
         )}

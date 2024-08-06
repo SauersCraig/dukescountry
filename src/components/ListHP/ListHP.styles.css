@@ -5,10 +5,12 @@
 .welcomeContainer h2 {
   color: #febc02;
   font-size: 3em;
+  line-height: 0.9;
 }
 .welcomeContainer p {
   font-size: 1.5em;
   padding: 10px 0 10px;
+  font-family: "SourceSans";
 }
 @media only screen and (max-width: 900px) {
   .welcomeContainer {

@@ -31,17 +31,14 @@ export function PopUp() {
   }
   async function handleSubmit(e) {
     e.preventDefault();
-    if (formData.email && formData.phone !== "") {
-      const { data, error } = await supabase
-        .from("SignUps")
-        .insert([{ email: formData.email, phone: formData.phone }])
-        .select();
 
-      setCookie(true);
-      setOpen(false);
-    } else {
-      alert("Please Fill Out Both Inputs");
-    }
+    const { data, error } = await supabase
+      .from("SignUps")
+      .insert([{ email: formData.email, phone: formData.phone }])
+      .select();
+
+    setCookie(true);
+    setOpen(false);
   }
   console.log(formData.phone);
   return (
@@ -71,7 +68,7 @@ export function PopUp() {
               <h1 className="headerPopUp">ENTER TO WIN</h1>
             </div>
             <div className="popYellowSection">
-              <h2>
+              <h2 className="signUpTextPop">
                 Sign up for updates and you'll be entered to win a Duke's
                 Country welcome kit.
               </h2>
@@ -95,7 +92,7 @@ export function PopUp() {
                   required
                 />
                 <button className="subBtnPopUp" type="submit">
-                  TELL ME MORE
+                  Enter Duke's Country
                 </button>
               </form>
               <div onClick={closePopUp}>

@@ -28,6 +28,10 @@
   font-family: "DukesTNarrow";
   src: url(./assets/fonts/TungstenNarrow-SemiBold.ttf) format("truetype");
 }
+@font-face {
+  font-family: "SourceSans";
+  src: url(./assets/fonts/SourceSans3.ttf) format("truetype");
+}
 body {
   font-family: "ArcherPro";
   padding: 0;
