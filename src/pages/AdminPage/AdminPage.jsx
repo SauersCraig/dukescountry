@@ -24,7 +24,21 @@ export function AdminPage() {
       getUsers();
     }
   }, [token]);
-
+  const updateUsers = (payload) => {
+    const filterUsers = users.filter((i) => i.id !== payload.new.id);
+    let x = [...filterUsers, payload.new];
+    setUsers(x);
+  };
+  const channels = supabase
+    .channel("custom-all-channel")
+    .on(
+      "postgres_changes",
+      { event: "*", schema: "public", table: "SignUps" },
+      (payload) => {
+        updateUsers(payload);
+      }
+    )
+    .subscribe();
   async function getUsers() {
     let { data: SignUps, error } = await supabase.from("SignUps").select();
     setUsers(SignUps);
