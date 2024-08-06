@@ -6,9 +6,9 @@ import thumbnail from "./assets/thumbnail.png";
 // Depend
 import { Route, Routes } from "react-router-dom";
 // Components
-import { Header } from "./components/Header/Header";
+
 import { Footer } from "./components/Footer/Footer";
-import { PopUp } from "./components/PopUp/PopUp";
+
 // Pages
 import { HomePage } from "./pages/HomePage/HomePage";
 import { AdminPage } from "./pages/AdminPage/AdminPage";
@@ -16,8 +16,8 @@ import { AdminPage } from "./pages/AdminPage/AdminPage";
 function App() {
   return (
     <>
-      <PopUp />
-      <Header />
+     
+    
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/AdminPage" element={<AdminPage />} />

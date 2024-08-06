@@ -31,7 +31,7 @@ export function Login({ setToken }) {
   }
   return (
     <>
-      <div>
+      <div className="logInContainer">
         <h1 className="headerTY">Sign in</h1>
 
         <form onSubmit={handleSubmit} className="formContainer">

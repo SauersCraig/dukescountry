@@ -1,6 +1,9 @@
 .signUpText {
   text-align: center;
 }
+.logInContainer {
+  height: 100vh;
+}
 .smallerSignUpText {
   text-align: center;
   font-size: 0.8em;

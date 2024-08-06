@@ -1,0 +1,36 @@
+.delPopUpContainer {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  background-color: black;
+  width: 70%;
+  height: 500px;
+  padding: 50px 10px 50px;
+  text-align: center;
+}
+.delPopUpContainer p {
+  color: white;
+}
+.delPopUpContainer button {
+  background-color: red;
+  padding: 10px 30px 10px;
+  margin: 10px 0 10px;
+  color: white;
+  font-weight: 900;
+}
+.delPopUpContainer button:hover {
+  background-color: yellow;
+  color: black;
+  filter: brightness(100%);
+}
+.closeText {
+  background-color: white;
+  color: black;
+  padding: 10px 30px 10px;
+  margin: 10px 0 10px;
+  font-weight: 900;
+  cursor: pointer;
+}
+.closeText:hover {
+  background-color: lightblue;
+}

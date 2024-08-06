@@ -1,3 +1,7 @@
 .adminBody {
-  height: 100vh;
+}
+.logoAdmin {
+  width: 50%;
+  display: block;
+  margin: 0 auto 0;
 }

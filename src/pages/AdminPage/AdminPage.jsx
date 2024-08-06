@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { supabase } from "../../client";
 import { Login } from "../../components/Login/Login";
 import { CSVLink } from "react-csv";
+import Logo from "../../assets/logos/WTDClogo.png";
 import { SignUpSection } from "../../components/SignUpSection/SignUpSection";
 export function AdminPage() {
   const [token, setToken] = useState(false);
@@ -39,7 +40,8 @@ export function AdminPage() {
   const name = token ? token.user.user_metadata.first_name : "";
   return (
     <div className="adminBody">
-      <h1 className="text-center">Admin Page For Offical Use Only</h1>
+      <img src={Logo} alt="Welcome to Duke's Country" className="logoAdmin" />
+      <h1 className="text-center">Admin Page For Offical Uses Only</h1>
       <div>
         {token ? (
           <div>
