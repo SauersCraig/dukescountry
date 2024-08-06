@@ -35,7 +35,7 @@ export function RoadMap() {
         </a>
         <a href="https://dukesmayo.com/pages/dukes-mayo-bowl" target="_blank">
           <img
-            src={ClassicSign}
+            src={BowlSign}
             alt="Road sign with the word Mayo Bowl on it"
             className=" merchSign  roadSign"
           />
@@ -65,7 +65,7 @@ export function RoadMap() {
         </a>
         <a href="https://dukesmayo.com/pages/dukes-mayo-bowl" target="_blank">
           <img
-            src={ClassicSign}
+            src={BowlSign}
             alt="Road sign with the word Mayo Bowl on it"
             className=" merchSignMob roadSignMob"
           />

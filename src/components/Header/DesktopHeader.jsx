@@ -21,7 +21,7 @@ export function DesktopHeader() {
           MERCH
         </a>
         <a href="https://dukesmayo.com/pages/classic" target="_blank">
-          DUKE'S MAYO CLASSIC
+          DUKE'S MAYO BOWL
         </a>
       </div>
     </nav>
