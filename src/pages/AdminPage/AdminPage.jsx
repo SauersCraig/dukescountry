@@ -55,7 +55,7 @@ export function AdminPage() {
   return (
     <div className="adminBody">
       <img src={Logo} alt="Welcome to Duke's Country" className="logoAdmin" />
-      <h1 className="text-center">Admin Page For Offical Uses Only</h1>
+      <h1 className="text-center">Admin Page For Official Uses Only</h1>
       <div>
         {token ? (
           <div>
