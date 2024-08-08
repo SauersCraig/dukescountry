@@ -4,7 +4,7 @@ import Guys from "../../assets/gifs/videoGif-reduced.gif";
 
 export function VideoHero() {
   return (
-    <banner className="videoHeroContainer">
+    <header className="videoHeroContainer">
       <section>
         <img
           src={Guys}
@@ -13,6 +13,6 @@ export function VideoHero() {
         />
       </section>
       <h1> WELCOME TO DUKE'S COUNTRY. </h1>
-    </banner>
+    </header>
   );
 }
