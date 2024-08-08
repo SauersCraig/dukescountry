@@ -77,19 +77,18 @@ export function PopUp() {
                 Country welcome kit.
               </h2>
               <form className="popUpForm" onSubmit={handleSubmit}>
-                <label>
-                  Email<br></br>
-                  <input
-                    type="email"
-                    onChange={handleChange}
-                    name="emailAddress"
-                    required
-                    aria-label="Email"
-                    id="emailAddress"
-                    size="30"
-                    title="Please provide a valid email address"
-                  ></input>
-                </label>
+                <label htmlFor="emailAddress">Email </label>
+                <br></br>
+                <input
+                  type="email"
+                  onChange={handleChange}
+                  name="emailAddress"
+                  required
+                  aria-label="Email"
+                  id="emailAddress"
+                  size="30"
+                  title="Please provide a valid email address"
+                ></input>
 
                 <PhoneInput
                   country={"us"}
