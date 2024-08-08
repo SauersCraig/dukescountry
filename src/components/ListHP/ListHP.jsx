@@ -3,7 +3,7 @@ import "./ListHP.styles.css";
 export function ListHP() {
   return (
     <div className="welcomeContainer">
-      <h2> WELCOME TO DUKE'S COUNTRY. </h2>
+      <h1> WELCOME TO DUKE'S COUNTRY. </h1>
       <div>
         <p>Duke's Mayo isn't just a jar. It's a place.</p>
       </div>
