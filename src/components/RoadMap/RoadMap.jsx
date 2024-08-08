@@ -11,13 +11,8 @@ import MobileRoad from "../../assets/roads/MobileRoad.png";
 export function RoadMap() {
   return (
     <section className="roadMapSection">
-      <header>
-        <img
-          src={Explore}
-          alt="Explore Duke's Country"
-          className="exploreLogo"
-        />
-      </header>
+      <img src={Explore} alt="Explore Duke's Country" className="exploreLogo" />
+
       {/* DeskTop */}
       <div className="deskSignContainer">
         <img
