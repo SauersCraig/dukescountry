@@ -2,7 +2,7 @@ import "./ListHP.styles.css";
 
 export function ListHP() {
   return (
-    <div className="welcomeContainer">
+    <section className="welcomeContainer">
       <h1> WELCOME TO DUKE'S COUNTRY. </h1>
       <div>
         <p>Duke's Mayo isn't just a jar. It's a place.</p>
@@ -25,6 +25,6 @@ export function ListHP() {
       <div>
         <p>And if you love mayo, you're in the right place.</p>
       </div>
-    </div>
+    </section>
   );
 }

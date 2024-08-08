@@ -46,9 +46,13 @@ export function PopUp() {
       {open && !cookie ? (
         <div className="popUpContainer">
           <div className="popUp">
-            <div onClick={closePopUp} className="closeX">
+            <button
+              onClick={closePopUp}
+              className="closeX"
+              aria-label="Close PopUp"
+            >
               <p>X</p>
-            </div>
+            </button>
 
             <div>
               <img
@@ -80,6 +84,7 @@ export function PopUp() {
                   onChange={handleChange}
                   name="email"
                   required
+                  aria-label="Email Input"
                 ></input>
                 <PhoneInput
                   country={"us"}
@@ -91,13 +96,20 @@ export function PopUp() {
                   }
                   required
                 />
-                <button className="subBtnPopUp" type="submit">
+                <button
+                  className="subBtnPopUp"
+                  type="submit"
+                  aria-label="Clicking Button will enter you for a chance to win a welcome kit"
+                >
                   Enter Duke's Country
                 </button>
               </form>
-              <div onClick={closePopUp}>
+              <button
+                onClick={closePopUp}
+                aria-label="Clicking will close the pop up"
+              >
                 <p className="noThanks">No Thanks</p>
-              </div>
+              </button>
             </div>
           </div>
         </div>
