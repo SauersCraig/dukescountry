@@ -13,17 +13,15 @@
   grid-template-columns: 1fr 1fr 1fr;
   padding: 0;
   margin: 0;
-  height: 150px;
+  height: 120px;
 }
 .logoDesk {
-  display: block;
-  margin: 0px auto 0;
-  max-height: 140px;
+  max-height: 110px;
 }
 .menuLinks {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-top: 75px;
+  padding-top: 20px;
   text-align: center;
   font-size: 1.3em;
 }
@@ -33,7 +31,10 @@
 .item1 {
 }
 .item2 {
-  padding: 10px;
+  text-align: center;
+}
+.merchLink {
+  text-align: start;
 }
 
 @media only screen and (max-width: 900px) {
@@ -74,14 +75,13 @@
   width: 100%;
   text-align: center;
 }
-.mobHeaderMenu a {
+.mobLinks {
   font-family: "ProtestStrike";
   display: block;
 
   font-size: 2em;
   color: black;
-  color: white;
 }
-.mobHeaderMenu a:hover {
+.mobLinks:hover {
   color: white;
 }
