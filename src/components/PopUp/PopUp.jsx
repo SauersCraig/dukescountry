@@ -8,7 +8,7 @@ export function PopUp() {
   const [open, setOpen] = useState(true);
   const [cookie, setCookie] = useState(false);
   const [formData, setFormData] = useState({
-    email: "",
+    emailAddress: "",
     phone: "",
   });
 
@@ -34,7 +34,7 @@ export function PopUp() {
 
     const { data, error } = await supabase
       .from("SignUps")
-      .insert([{ email: formData.email, phone: formData.phone }])
+      .insert([{ email: formData.emailAddress, phone: formData.phone }])
       .select();
 
     setCookie(true);
@@ -77,15 +77,20 @@ export function PopUp() {
                 Country welcome kit.
               </h2>
               <form className="popUpForm" onSubmit={handleSubmit}>
-                <label>Email</label>
-                <br></br>
-                <input
-                  type="email"
-                  onChange={handleChange}
-                  name="email"
-                  required
-                  aria-label="Email Input"
-                ></input>
+                <label>
+                  Email<br></br>
+                  <input
+                    type="email"
+                    onChange={handleChange}
+                    name="emailAddress"
+                    required
+                    aria-label="Email"
+                    id="emailAddress"
+                    size="30"
+                    title="Please provide a valid email address"
+                  ></input>
+                </label>
+
                 <PhoneInput
                   country={"us"}
                   placeholder={"PHONE"}
