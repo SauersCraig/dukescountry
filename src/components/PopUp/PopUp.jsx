@@ -91,7 +91,7 @@ export function PopUp() {
                   placeholder
                   autoComplete="email"
                   aria-required="true"
-                ></input>
+                />
 
                 <PhoneInput
                   country={"us"}
@@ -106,14 +106,14 @@ export function PopUp() {
                 <button
                   className="subBtnPopUp"
                   type="submit"
-                  aria-label="Clicking Button will enter you for a chance to win a welcome kit"
+                  aria-label="Clicking Button IF you entered in your email address, will enter you for a chance to win a welcome kit"
                 >
                   Enter Duke's Country
                 </button>
               </form>
               <button
                 onClick={closePopUp}
-                aria-label="Clicking will close the pop up"
+                aria-label="No Thank You Clicking will close the pop up with out entering you for a chance to win a welcome kit"
               >
                 <p className="noThanks">No Thanks</p>
               </button>
