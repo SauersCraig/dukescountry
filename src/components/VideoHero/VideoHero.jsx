@@ -5,7 +5,7 @@ import Guys from "../../assets/gifs/videoGif-reduced.gif";
 export function VideoHero() {
   return (
     <header className="videoHeroContainer">
-      <section>
+      <section role="banner">
         <img
           src={Guys}
           className="heroBanner"

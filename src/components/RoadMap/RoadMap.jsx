@@ -10,7 +10,7 @@ import MobileRoad from "../../assets/roads/MobileRoad.png";
 
 export function RoadMap() {
   return (
-    <section className="roadMapSection">
+    <section className="roadMapSection" role="region">
       <h2 className="exploreDukessCountry">Explore Dukes Country</h2>
       <img src={Explore} alt="Explore Duke's Country" className="exploreLogo" />
 

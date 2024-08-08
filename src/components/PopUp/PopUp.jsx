@@ -44,7 +44,7 @@ export function PopUp() {
   return (
     <>
       {open && !cookie ? (
-        <section className="popUpContainer">
+        <section className="popUpContainer" role="alert">
           <div className="popUp">
             <button
               onClick={closePopUp}
