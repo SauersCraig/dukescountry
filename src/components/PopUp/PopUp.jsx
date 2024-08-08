@@ -44,7 +44,7 @@ export function PopUp() {
   return (
     <>
       {open && !cookie ? (
-        <div className="popUpContainer">
+        <section className="popUpContainer">
           <div className="popUp">
             <button
               onClick={closePopUp}
@@ -119,7 +119,7 @@ export function PopUp() {
               </button>
             </div>
           </div>
-        </div>
+        </section>
       ) : (
         <></>
       )}

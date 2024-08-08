@@ -14,11 +14,11 @@ export function HomePage() {
     <div>
       <PopUp />
       <Header />
-      <div className="comingSoon">
+      <main className="comingSoon">
         <VideoHero />
         <ListHP />
         <RoadMap />
-      </div>
+      </main>
     </div>
   );
 }
