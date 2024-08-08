@@ -4,14 +4,15 @@ import Guys from "../../assets/gifs/videoGif-reduced.gif";
 
 export function VideoHero() {
   return (
-    <div>
-      <div className="videoHeroContainer">
+    <banner className="videoHeroContainer">
+      <section>
         <img
           src={Guys}
           className="heroBanner"
           alt="two guys in a convertible with thier hands up, no shirts, with giant Duke's Mayo tatoo's on thier back"
         />
-      </div>
-    </div>
+      </section>
+      <h1> WELCOME TO DUKE'S COUNTRY. </h1>
+    </banner>
   );
 }

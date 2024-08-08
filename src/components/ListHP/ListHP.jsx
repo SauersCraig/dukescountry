@@ -3,7 +3,6 @@ import "./ListHP.styles.css";
 export function ListHP() {
   return (
     <ul className="welcomeContainer">
-      <h1> WELCOME TO DUKE'S COUNTRY. </h1>
       <li>Duke's Mayo isn't just a jar. It's a place.</li>
       <li>A place where friends and family can enjoy a good meal.</li>
       <li>
