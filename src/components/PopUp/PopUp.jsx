@@ -77,18 +77,19 @@ export function PopUp() {
                 Country welcome kit.
               </h2>
               <form className="popUpForm" onSubmit={handleSubmit}>
-                <label htmlFor="emailAddress">Email </label>
-                <br></br>
+                <p className="emailText">Email</p>
+                <label htmlFor="emailAddress" class="visuallyhidden">
+                  Email
+                </label>
                 <input
                   type="email"
                   onChange={handleChange}
                   name="emailAddress"
                   required
-                  aria-label="Email"
+                  aria-label="Email Input"
                   id="emailAddress"
                   size="30"
                   title="Please provide a valid email address"
-                  placeholder
                   autoComplete="email"
                   aria-required="true"
                 />
