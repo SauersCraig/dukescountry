@@ -112,6 +112,11 @@ input[type="number"] {
   position: absolute;
   width: 1px;
 }
+.emailInput::placeholder {
+  color: transparent;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
 @media only screen and (max-width: 900px) {
   .gifPopUp {
     width: 100vw;

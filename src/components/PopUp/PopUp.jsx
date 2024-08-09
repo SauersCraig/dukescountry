@@ -87,11 +87,13 @@ export function PopUp() {
                   name="emailAddress"
                   required
                   aria-label="Email Input"
+                  placeholder="Email@email.com"
                   id="emailAddress"
                   size="30"
                   title="Please provide a valid email address"
                   autoComplete="email"
                   aria-required="true"
+                  className="emailInput"
                 />
 
                 <PhoneInput
