@@ -4,7 +4,7 @@ import Logo from "../../assets/logos/WTDClogo.png";
 import HamBtn from "../../assets/hamBtn.png";
 export function MobileHeader() {
   const [openMenu, setOpenMenu] = useState(false);
-
+  // Dropdown menu will only open if state openMenu is true
   const handleOpenMenu = () => {
     setOpenMenu(!openMenu);
   };

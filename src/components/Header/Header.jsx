@@ -5,11 +5,8 @@ import HamBtn from "../../assets/hamBtn.png";
 import { MobileHeader } from "./MobileHeader";
 import { DesktopHeader } from "./DesktopHeader";
 export function Header() {
-  const [openMenu, setOpenMenu] = useState(false);
-
-  const handleOpenMenu = () => {
-    setOpenMenu(!openMenu);
-  };
+// Mobile Nav bar will open under 800 px 
+// Desktop menu will open if over 800px
   return (
     <>
       <div className="mobNav">

@@ -1,9 +1,13 @@
+// Styles
 import "./PopUp.styles.css";
+// React Imports
 import { useState, useEffect } from "react";
-import Logo from "../../assets/logos/logo.png";
-import Gif from "../../assets/MayoHandoff1.jpg";
 import { supabase } from "../../client";
 import PhoneInput from "react-phone-input-2";
+// Asset Imports
+import Logo from "../../assets/logos/logo.png";
+import Gif from "../../assets/MayoHandoff1.jpg";
+
 export function PopUp() {
   const [open, setOpen] = useState(true);
   const [cookie, setCookie] = useState(false);
@@ -11,24 +15,29 @@ export function PopUp() {
     emailAddress: "",
     phone: "",
   });
-
+  // set PopUpToken in session storage to value
   if (cookie) {
     sessionStorage.setItem("PopUpToken", JSON.stringify(cookie));
   }
+  // First Check for PopUpToken in Session Storage - State is named cookie
   useEffect(() => {
     if (sessionStorage.getItem("PopUpToken")) {
       let data = JSON.parse(sessionStorage.getItem("PopUpToken"));
       setCookie(data);
     }
   }, []);
-
+  // Close Popup by setting open state to false
   const closePopUp = () => {
     setOpen(false);
   };
+  // handleChange for input  Takes value from event.target.value and sets it to state formData
   function handleChange(event) {
     const value = event.target.value;
     setFormData({ ...formData, [event.target.name]: value });
   }
+
+  // Submit form to Supabase
+
   async function handleSubmit(e) {
     e.preventDefault();
 
@@ -36,13 +45,15 @@ export function PopUp() {
       .from("SignUps")
       .insert([{ email: formData.emailAddress, phone: formData.phone }])
       .select();
-
+    // set session Storage so pop up will not open again
     setCookie(true);
+    // close pop up
     setOpen(false);
   }
 
   return (
     <>
+      {/* Needs both Open to be true and cookie to be null to appear */}
       {open && !cookie ? (
         <section className="popUpContainer" role="alert">
           <div className="popUp">
