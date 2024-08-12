@@ -1,7 +1,7 @@
 import "./PopUp.styles.css";
 import { useState, useEffect } from "react";
 import Logo from "../../assets/logos/logo.png";
-import Gif from "../../assets/gifs/splashPageGif.gif";
+import Gif from "../../assets/MayoHandoff1.jpg";
 import { supabase } from "../../client";
 import PhoneInput from "react-phone-input-2";
 export function PopUp() {
@@ -40,7 +40,7 @@ export function PopUp() {
     setCookie(true);
     setOpen(false);
   }
-  console.log(formData.phone);
+
   return (
     <>
       {open && !cookie ? (
@@ -64,7 +64,7 @@ export function PopUp() {
             <div>
               <img
                 src={Gif}
-                alt="photoshoot of two guys"
+                alt="two hands - handing off a bottle of Duke's Mayo"
                 className="gifPopUp"
               />
             </div>
@@ -86,7 +86,7 @@ export function PopUp() {
                   onChange={handleChange}
                   name="emailAddress"
                   required
-                  aria-label="Email Input"
+                  aria-label="Email"
                   placeholder="Email@email.com"
                   id="emailAddress"
                   size="30"
