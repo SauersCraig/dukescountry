@@ -31,6 +31,7 @@ export function DeletePopUp({ id, setOpenDel }) {
         </h2>
         <p> ARE YOU SURE YOU WANT TO DELETE {id.email} </p>
         <p>This can not be undone</p>
+        <p>EVEN CRAIG CAN'T FIX THIS!!!</p>
         <p>Type "Delete"</p>
         <input onChange={handleChange} />
         <br></br>

@@ -22,7 +22,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/AdminPage" element={<AdminPage />} />
       </Routes>
-      <Footer />
+   
     </>
   );
 }

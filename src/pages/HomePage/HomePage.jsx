@@ -8,6 +8,7 @@ import { VideoHero } from "../../components/VideoHero/VideoHero";
 import { RoadMap } from "../../components/RoadMap/RoadMap";
 import { PopUp } from "../../components/PopUp/PopUp";
 import { Header } from "../../components/Header/Header";
+import { Footer } from "../../components/Footer/Footer";
 
 export function HomePage() {
   return (
@@ -19,6 +20,7 @@ export function HomePage() {
         <ListHP />
         <RoadMap />
       </main>
+      <Footer />
     </div>
   );
 }

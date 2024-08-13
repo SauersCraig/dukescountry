@@ -60,12 +60,15 @@ export function AdminPage() {
         {token ? (
           <div>
             <SignUpSection name={name} users={users} />
-            <button onClick={() => signOut()} className="subBtn">
-              Sign Out
-            </button>
-            <CSVLink data={users} className="subBtn">
-              Download Users
-            </CSVLink>
+            <div className="buttonsAdmin">
+              <button onClick={() => signOut()} className="subBtn">
+                Sign Out
+              </button>
+
+              <CSVLink data={users} className="subBtn">
+                Download Users
+              </CSVLink>
+            </div>
           </div>
         ) : (
           <Login setToken={setToken} />
