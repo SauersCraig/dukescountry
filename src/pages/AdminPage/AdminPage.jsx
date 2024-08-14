@@ -5,10 +5,11 @@ import { Login } from "../../components/Login/Login";
 import { CSVLink } from "react-csv";
 import Logo from "../../assets/logos/WTDClogo.png";
 import { SignUpSection } from "../../components/SignUpSection/SignUpSection";
+import ReactGA from "react-ga";
 export function AdminPage() {
   const [token, setToken] = useState(false);
   const [users, setUsers] = useState([]);
-
+  ReactGA.pageview(window.location.pathname + window.location.search);
   if (token) {
     sessionStorage.setItem("token", JSON.stringify(token));
   }

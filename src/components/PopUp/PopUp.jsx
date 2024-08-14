@@ -89,7 +89,7 @@ export function PopUp() {
               </h2>
               <form className="popUpForm" onSubmit={handleSubmit}>
                 <p className="emailText">Email</p>
-                <label htmlFor="emailAddress" class="visuallyhidden">
+                <label htmlFor="emailAddress" className="visuallyhidden">
                   Email
                 </label>
                 <input

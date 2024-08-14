@@ -1,28 +1,24 @@
-// Imports
 // Assets
 import "./App.css";
-import tubby from "./assets/tubbyLayingDown.png";
-import thumbnail from "./assets/thumbnail.png";
+
 // Depend
 import { Route, Routes } from "react-router-dom";
-// Components
-
-import { Footer } from "./components/Footer/Footer";
+import { useEffect } from "react";
+import ReactGA from "react-ga";
 
 // Pages
 import { HomePage } from "./pages/HomePage/HomePage";
 import { AdminPage } from "./pages/AdminPage/AdminPage";
-
+const TRACKING_ID = "G-C9JHZKQ2G8";
 function App() {
+  ReactGA.initialize(TRACKING_ID);
+
   return (
     <>
-     
-    
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/AdminPage" element={<AdminPage />} />
       </Routes>
-   
     </>
   );
 }
