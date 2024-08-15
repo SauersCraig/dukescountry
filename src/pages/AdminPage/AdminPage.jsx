@@ -62,13 +62,12 @@ export function AdminPage() {
           <div>
             <SignUpSection name={name} users={users} />
             <div className="buttonsAdmin">
-              <button onClick={() => signOut()} className="subBtn">
-                Sign Out
-              </button>
-
               <CSVLink data={users} className="subBtn">
                 Download Users
               </CSVLink>
+              <button onClick={() => signOut()} className="subBtn">
+                Sign Out
+              </button>
             </div>
           </div>
         ) : (
