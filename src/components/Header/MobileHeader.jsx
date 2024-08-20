@@ -25,7 +25,7 @@ export function MobileHeader() {
           <ul className="mobHeaderMenu">
             <li>
               <a
-                href="https://www.youtube.com/watch?v=Hz_cWTMz-48"
+                href="https://www.youtube.com/watch?v=A4D4d-cr5po"
                 target="_blank"
                 aria-label="Link takes you to a video about Duke's Mayo."
                 className="mobLinks"
@@ -35,7 +35,7 @@ export function MobileHeader() {
             </li>
             <li>
               <a
-                href="https://dukesmayo.com/blogs/recipes"
+                href="https://dukesmayo.com/blogs/recipes/tagged/tailgate"
                 target="_blank"
                 aria-label="Learn more about Recipes on Duke's Mayo Main Site"
                 className="mobLinks"
@@ -45,7 +45,7 @@ export function MobileHeader() {
             </li>
             <li>
               <a
-                href="https://dukesmayo.com/collections/merchandise"
+                href="https://dukesmayo.com/collections/dukes-country"
                 target="_blank"
                 aria-label="Buy Some Cool Duke's Mayo Merch on Duke's Mayo E-Com Site"
                 className="mobLinks"

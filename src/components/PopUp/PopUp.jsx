@@ -84,8 +84,8 @@ export function PopUp() {
             </div>
             <div className="popYellowSection">
               <h2 className="signUpTextPop">
-                Sign up for updates and you'll be entered to win a Duke's
-                Country welcome kit.
+                Sign up to receive updates from Duke's Country and be entered to
+                win a Welcome to Duke's Country Swag Bag.
               </h2>
               <form className="popUpForm" onSubmit={handleSubmit}>
                 <p className="emailText">Email</p>
@@ -106,10 +106,14 @@ export function PopUp() {
                   aria-required="true"
                   className="emailInput"
                 />
-
+                <label htmlFor="phoneNumber" className="visuallyhidden">
+                  Phone Number
+                </label>
                 <PhoneInput
                   country={"us"}
                   placeholder={"PHONE"}
+                  name="phoneNumber"
+                  id="phoneNumber"
                   value={formData.phone}
                   rules={{ required: true }}
                   onChange={(value) =>
