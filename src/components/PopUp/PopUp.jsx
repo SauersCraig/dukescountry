@@ -129,6 +129,7 @@ export function PopUp() {
               <button onClick={closePopUp} aria-label="No Thanks Close Pop up">
                 <p className="noThanks">No Thanks</p>
               </button>
+              <p className="smallText">Weekly swag bag winners will be chosen and contacted by the Duke’s team to receive Welcome to Duke’s Country merch!</p>
             </div>
           </div>
         </section>

@@ -43,6 +43,9 @@
   font-family: "SourceSans";
   font-weight: 700;
 }
+.smallText {
+  font-size: 0.8em;
+}
 .gifPopUp {
   display: block;
   height: 400px;
