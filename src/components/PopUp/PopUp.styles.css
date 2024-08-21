@@ -85,10 +85,7 @@ input:focus {
   margin-top: 20px;
 }
 .subBtnPopUp:hover {
-  background-color: black;
-  filter: brightness(100%);
-  border: 2px black solid;
-  color: white;
+  filter: brightness(95%);
 }
 .noThanks {
   text-decoration: underline;
