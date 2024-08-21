@@ -124,7 +124,7 @@ export function PopUp() {
                 <button
                   className="subBtnPopUp"
                   type="submit"
-                  aria-label="Clicking Button IF you entered in your email address, will enter you for a chance to win a welcome kit"
+                  aria-label="Sign Up Submit Form"
                 >
                   Enter Duke's Country
                 </button>
