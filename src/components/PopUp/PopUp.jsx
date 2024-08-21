@@ -88,10 +88,10 @@ export function PopUp() {
                 win a Welcome to Duke's Country Swag Bag.
               </h2>
               <form className="popUpForm" onSubmit={handleSubmit}>
-                <p className="emailText">Email</p>
-                <label htmlFor="emailAddress" className="visuallyhidden">
+                <label htmlFor="emailAddress" className="emailText">
                   Email
                 </label>
+                <br></br>
                 <input
                   type="email"
                   onChange={handleChange}
@@ -106,9 +106,6 @@ export function PopUp() {
                   aria-required="true"
                   className="emailInput"
                 />
-                <label htmlFor="phoneNumber" className="visuallyhidden">
-                  Phone Number
-                </label>
                 <PhoneInput
                   country={"us"}
                   placeholder={"PHONE"}
