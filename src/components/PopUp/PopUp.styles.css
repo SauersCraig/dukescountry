@@ -85,7 +85,7 @@ input:focus {
   margin-top: 20px;
 }
 .subBtnPopUp:hover {
-  background-color: #febc02;
+  background-color: black;
   filter: brightness(100%);
   border: 2px black solid;
   color: white;
