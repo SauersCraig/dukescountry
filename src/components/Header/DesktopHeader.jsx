@@ -10,7 +10,7 @@ export function DesktopHeader() {
           <a
             href="https://www.youtube.com/watch?v=A4D4d-cr5po"
             target="_blank"
-            aria-label="Link takes you to a video about Duke's Mayo."
+            aria-label="Link takes you to a video about Duke's Country."
           >
             WATCH THE VIDEO
           </a>

@@ -129,10 +129,7 @@ export function PopUp() {
                   Enter Duke's Country
                 </button>
               </form>
-              <button
-                onClick={closePopUp}
-                aria-label="No Thank You Clicking will close the pop up with out entering you for a chance to win a welcome kit"
-              >
+              <button onClick={closePopUp} aria-label="No Thanks Close Pop up">
                 <p className="noThanks">No Thanks</p>
               </button>
             </div>
