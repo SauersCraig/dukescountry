@@ -60,7 +60,6 @@ export function AdminPage() {
       <div>
         {token ? (
           <div>
-            <SignUpSection name={name} users={users} />
             <div className="buttonsAdmin">
               <CSVLink data={users} className="subBtn">
                 Download Users
@@ -69,6 +68,7 @@ export function AdminPage() {
                 Sign Out
               </button>
             </div>
+            <SignUpSection name={name} users={users} />
           </div>
         ) : (
           <Login setToken={setToken} />
