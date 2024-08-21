@@ -19,7 +19,7 @@ export function DesktopHeader() {
           <a
             href="https://dukesmayo.com/blogs/recipes/tagged/tailgate"
             target="_blank"
-            aria-label="Learn more about Recipes on Duke's Mayo Main Site"
+            aria-label="Learn more about Recipes on Duke's Mayo Main Site in a new tab"
           >
             RECIPES
           </a>
@@ -33,7 +33,7 @@ export function DesktopHeader() {
           <a
             href="https://dukesmayo.com/collections/dukes-country"
             target="_blank"
-            aria-label="Buy Some Cool Duke's Mayo Merch on Duke's Mayo E-Com Site"
+            aria-label="Buy Some Cool Duke's Mayo Merch on Duke's Mayo E-Com Site in a new tab"
           >
             MERCH
           </a>
@@ -42,7 +42,7 @@ export function DesktopHeader() {
           <a
             href="https://dukesmayo.com/pages/classic"
             target="_blank"
-            aria-label="Learn more about Duke's Mayo Football games on Duke's Mayo E-Com Site"
+            aria-label="Learn more about Duke's Mayo Football games on Duke's Mayo E-Com Site in a new tab"
           >
             DUKE'S MAYO BOWL
           </a>

@@ -37,7 +37,7 @@ export function MobileHeader() {
               <a
                 href="https://dukesmayo.com/blogs/recipes/tagged/tailgate"
                 target="_blank"
-                aria-label="Learn more about Recipes on Duke's Mayo Main Site"
+                aria-label="Learn more about Recipes on Duke's Mayo Main Site in a new tab"
                 className="mobLinks"
               >
                 RECIPES
@@ -47,7 +47,7 @@ export function MobileHeader() {
               <a
                 href="https://dukesmayo.com/collections/dukes-country"
                 target="_blank"
-                aria-label="Buy Some Cool Duke's Mayo Merch on Duke's Mayo E-Com Site"
+                aria-label="Buy Some Cool Duke's Mayo Merch on Duke's Mayo E-Com Site in a new tab"
                 className="mobLinks"
               >
                 MERCH
@@ -57,7 +57,7 @@ export function MobileHeader() {
               <a
                 href="https://dukesmayo.com/pages/classic"
                 target="_blank"
-                aria-label="Learn more about Duke's Mayo Football games on Duke's Mayo E-Com Site"
+                aria-label="Learn more about Duke's Mayo Football games on Duke's Mayo E-Com Site in a new tab"
                 className="mobLinks"
               >
                 DUKE'S MAYO BOWL
