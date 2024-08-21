@@ -62,7 +62,7 @@ export function PopUp() {
               className="closeX"
               aria-label="Close PopUp"
             >
-              <p>X</p>
+              X
             </button>
 
             <div>

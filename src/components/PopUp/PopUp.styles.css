@@ -14,7 +14,7 @@
   background-position: center;
   background-size: cover;
   border-radius: 10px;
-  border: solid 2px #febc02;
+  border: solid 4px #febc02;
 }
 .popUpLogo {
   width: 30%;
@@ -24,17 +24,20 @@
 .closeX {
   cursor: pointer;
   position: absolute;
-  top: 15px;
-  right: 10px;
+  top: 20px;
+  right: 20px;
   font-family: "ProtestStrike";
   padding: 2px 10px 2px;
   line-height: 0;
   text-align: center;
   border-radius: 5px;
   color: white;
+  font-size: 2em;
 }
 .closeX:hover {
-  border: 2px white solid;
+  filter: brightness(100%);
+  color: #febc02;
+  font-size: 2.2em;
 }
 .signUpTextPop {
   font-family: "SourceSans";
@@ -135,5 +138,12 @@ input[type="number"] {
   }
   .subBtnPopUp {
     width: 70%;
+  }
+  .closeX {
+    top: 20px;
+    right: 8px;
+    padding: 0px 10px 0px;
+
+    color: white;
   }
 }
