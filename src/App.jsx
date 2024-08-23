@@ -4,7 +4,7 @@ import "./App.css";
 // Depend
 import { Route, Routes } from "react-router-dom";
 import { useEffect } from "react";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 // Pages
 import { HomePage } from "./pages/HomePage/HomePage";
@@ -12,7 +12,6 @@ import { AdminPage } from "./pages/AdminPage/AdminPage";
 const TRACKING_ID = "G-C9JHZKQ2G8";
 function App() {
   ReactGA.initialize(TRACKING_ID);
-
   return (
     <>
       <Routes>
