@@ -1,7 +1,9 @@
 // Asset Imports
 import "./HomePage.styles.css";
 import tubby from "../../assets/tubbyLayingDown.png";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 // Component Imports
 import { ListHP } from "../../components/ListHP/ListHP";
 import { VideoHero } from "../../components/VideoHero/VideoHero";
@@ -11,7 +13,15 @@ import { Header } from "../../components/Header/Header";
 import { Footer } from "../../components/Footer/Footer";
 
 export function HomePage() {
-  ReactGA.pageview(window.location.pathname + window.location.search);
+  const location = useLocation();
+
+  useEffect(() => {
+    ReactGA.send({
+      hitType: "pageview",
+      page: location.pathname + location.search,
+    });
+  }, [location]);
+
   return (
     <div>
       <PopUp />

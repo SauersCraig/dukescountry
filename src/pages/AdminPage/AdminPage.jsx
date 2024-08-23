@@ -2,14 +2,22 @@ import "./AdminPage.styles.css";
 import { useState, useEffect } from "react";
 import { supabase } from "../../client";
 import { Login } from "../../components/Login/Login";
+import { useLocation } from "react-router-dom";
 import { CSVLink } from "react-csv";
 import Logo from "../../assets/logos/WTDClogo.png";
 import { SignUpSection } from "../../components/SignUpSection/SignUpSection";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 export function AdminPage() {
   const [token, setToken] = useState(false);
   const [users, setUsers] = useState([]);
-  ReactGA.pageview(window.location.pathname + window.location.search);
+  const location = useLocation();
+
+  useEffect(() => {
+    ReactGA.send({
+      hitType: "pageview",
+      page: location.pathname + location.search,
+    });
+  }, [location]);
   if (token) {
     sessionStorage.setItem("token", JSON.stringify(token));
   }
