@@ -20,13 +20,13 @@ export function VideoHero() {
           />
         </a>
       </section>
-      <video controls autostart autoPlay muted className="videoDiv">
+      <video controls className="videoDiv">
         <source type="video/mp4" src={Video1} />
         <track
           src={CC}
-          label="English"
-          king="captions"
-          srclang="en-us"
+          kind="subtitles"
+          label="English Subtitles"
+          srclang="en"
           default
         />
       </video>
