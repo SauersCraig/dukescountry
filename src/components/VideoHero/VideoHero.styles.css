@@ -9,3 +9,7 @@
   font-size: 3em;
   line-height: 0.9;
 }
+.videoDiv {
+  height: 500px;
+  width: 600px;
+}

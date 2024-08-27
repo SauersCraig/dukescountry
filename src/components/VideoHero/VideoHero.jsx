@@ -1,6 +1,7 @@
 // Asset Imports
 import "./VideoHero.styles.css";
 import Guys from "../../assets/gifs/videoGif-reduced.gif";
+import Video from "../../assets/video/30Second.mp4";
 
 export function VideoHero() {
   return (
@@ -18,6 +19,14 @@ export function VideoHero() {
           />
         </a>
       </section>
+      <video
+        controls
+        autostart
+        autoPlay
+        scr={Video}
+        type="video/mp4"
+        className="videoDiv"
+      ></video>
       <h1> WELCOME TO DUKE'S COUNTRY. </h1>
     </header>
   );
