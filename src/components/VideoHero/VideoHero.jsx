@@ -2,7 +2,7 @@
 import "./VideoHero.styles.css";
 import Guys from "../../assets/gifs/videoGif-reduced.gif";
 import Video1 from "../../assets/video/30Second.mp4";
-import CC from "../../assets/video/CC30SecondDS.vtt";
+import CC from "../../assets/video/CC30SeondDS.vtt";
 
 export function VideoHero() {
   return (
@@ -24,6 +24,7 @@ export function VideoHero() {
             label="English Subtitles"
             srclang="en"
             default
+            className="testCC"
           />
         </video>
       </section>
