@@ -18,7 +18,10 @@ export function MobileHeader() {
     <nav className="mobNavBar">
       <div className="mobHeaderContainer">
         <button className="mobHeaderBtn" onClick={() => handleOpenMenu()}>
-          <img src={HamBtn} alt="NavButton" />
+          <img
+            src="https://wlaozdmgwaaymllhazpm.supabase.co/storage/v1/object/public/images/hamBtn.png?t=2024-08-28T18%3A24%3A19.180Z"
+            alt="NavButton"
+          />
         </button>
         <img
           src={Logo}
