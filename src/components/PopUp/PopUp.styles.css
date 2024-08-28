@@ -15,6 +15,7 @@
   background-size: cover;
   border-radius: 10px;
   border: solid 4px #febc02;
+  z-index: 99;
 }
 .popUpLogo {
   width: 30%;
