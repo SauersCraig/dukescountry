@@ -9,7 +9,11 @@
   font-size: 3em;
   line-height: 0.9;
 }
-.videoDiv {
-  height: 500px;
-  width: 600px;
+.video30 {
+  width: 100vw;
+  height: auto;
+}
+video::cue {
+  font-variation-settings: "wght" var(--wght), "MONO" var(--mono);
+  font-family: "SourceSans";
 }
