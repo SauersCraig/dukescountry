@@ -1,8 +1,6 @@
 // Asset Imports
 import "./VideoHero.styles.css";
 import Guys from "../../assets/gifs/videoGif-reduced.gif";
-import Video1 from "../../assets/video/30Second.mp4";
-import CC from "../../assets/video/CC30Secondfile.vtt";
 
 export function VideoHero() {
   return (
@@ -20,16 +18,7 @@ export function VideoHero() {
           />
         </a>
       </section>
-      <video controls autostart autoPlay muted className="videoDiv">
-        <source type="video/mp4" src={Video1} />
-        <track
-          src={CC}
-          label="English"
-          king="captions"
-          srclang="en-us"
-          default
-        />
-      </video>
+
       <h1> WELCOME TO DUKE'S COUNTRY. </h1>
     </header>
   );
