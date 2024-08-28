@@ -21,7 +21,7 @@ export function VideoHero() {
             src="https://wlaozdmgwaaymllhazpm.supabase.co/storage/v1/object/public/video/2024_FC_Dukes_WTDC_23976_1920x1080_16x9_30_HD_1.mp4?t=2024-08-28T17%3A03%3A14.162Z"
             type="video/mp4"
           ></source>
-          <track default kind="captions" srclang="en" src={CC} />
+          <track default kind="captions" srcLang="en" src={CC} />
           <p>Your browser does not support the video tag.</p>
         </video>
       </section>

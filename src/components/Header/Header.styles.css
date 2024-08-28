@@ -74,6 +74,7 @@
   padding: 30px 0px 30px;
   width: 100%;
   text-align: center;
+  z-index: 99;
 }
 .mobLinks {
   font-family: "ProtestStrike";
