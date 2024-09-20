@@ -1,0 +1,25 @@
+.footballContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px;
+  column-gap: 20px;
+}
+.singleGameContainer {
+  border-radius: 20px;
+  padding: 20px;
+  opacity: 0.8;
+}
+.firstSGContainer {
+  background-color: #ffc629;
+  color: black;
+}
+.secondSGContainer {
+  background-color: #d8282f;
+  color: white;
+}
+
+@media only screen and (max-width: 900px) {
+  .footballContainer {
+    display: block;
+  }
+}
