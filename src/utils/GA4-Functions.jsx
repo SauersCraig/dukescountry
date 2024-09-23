@@ -26,11 +26,3 @@ export function UsePageTracking() {
     }
   }, [initialized, location]);
 }
-
-export function GA4Events({ categoryTitle, actionTitle, labelTitle }) {
-  ReactGA.event({
-    category: categoryTitle,
-    action: actionTitle,
-    label: labelTitle,
-  });
-}

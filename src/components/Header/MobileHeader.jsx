@@ -1,17 +1,16 @@
 import "./Header.styles.css";
 import { useState } from "react";
 import Logo from "../../assets/logos/WTDClogo.png";
-import HamBtn from "../../assets/hamBtn.png";
-import { GA4Events } from "../../utils/GA4-Functions";
+import ReactGA from "react-ga4";
 export function MobileHeader() {
   const [openMenu, setOpenMenu] = useState(false);
   // Dropdown menu will only open if state openMenu is true
   const handleOpenMenu = () => {
     setOpenMenu(!openMenu);
-    GA4Events({
-      categoryTitle: "Mobile NavBar",
-      actionTitle: "User Click",
-      labelTitle: "Mobile Menu Opened",
+    ReactGA.event({
+      category: "Mobile NavBar",
+      action: "User Click",
+      label: "Mobile Menu Opened",
     });
   };
   return (
